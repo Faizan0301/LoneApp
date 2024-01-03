@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Lone Aplication</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="containar">
+      <div class="row">
+         <div id="lone">
+            <h1>Lone Application</h1>
+            <hr>
+            <h2>Rs: <input type="number" value="30000" id="amount"></h2>
+            <h3 id="timeInput">Month: 6</h3>
+            <input type="range" name="" id="time"  min="3" value="6" max="36" step="3" oninput="slide(this.value)">
+            <select name="" id="type">
+               <option value="nochoise">chooes your type</option>
+               <option value="9">Home (9%)</option>
+               <option value="18">Prasnole  (18%)</option>
+               <option value="11">Car (11%)</option>
+            </select>
+            <button onclick="calc()">Check interest</button>
+            <h2 id="result"></h2>
+         </div>
+      </div>
+   </div>
+</body>
+<script src="script.js"></script>
+
+</html>
